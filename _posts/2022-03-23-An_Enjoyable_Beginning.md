@@ -3,6 +3,7 @@ title: An Enjoyable Beginning
 excerpt: First SAC and First Impressions
 layout: post
 ---
+
 {% include header.html %}
 
 # A Brief Introduction
@@ -38,7 +39,7 @@ It's almost like the "mundane-ness" of it is what makes it fun, cause you get to
 better in a variety of ways, while also understanding what you did yourself, and why you did it. It's like a reflection
 phase, and I haven't done it before, but I quite like it. It gets me to question myself: "why did I do that?", "is there
 a better way to achieve what I did?", "what features could I add to make this more friendly?". Stuff like that. Overall,
-very nice, would recommend, though maybe not for *everything*. In the end, I added a few extra features like the name of
+very nice, would recommend, though maybe not for _everything_. In the end, I added a few extra features like the name of
 the input text file not mattering, as well as the ability to tell if the input file was valid or not.
 
 ## Module 2

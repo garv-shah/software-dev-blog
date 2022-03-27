@@ -3,6 +3,7 @@ title: Primary School Word Quiz
 excerpt: Test Table for Primary School Word Quiz
 layout: post
 ---
+
 {% include header.html %}
 
 <style>
@@ -12,7 +13,7 @@ layout: post
 </style>
 
 | Test Case                                          | Test Data                                                                                                                                                                         | Expected Result                                                                                                                           | Actual Result                                                                               |
-|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | input.csv                                          | renaming the csv file to wee.csv                                                                                                                                                  | the program should continue working as expected, as the file is fetched by its extension (.csv), not its name                             | ![Test 1 Screenshot]({{ site.baseurl }}{% link static/word_quiz_screenshots/test1.png %})   |
 | input.csv                                          | when creating the csv file, the user accidentally forgets a field, in this case lacking the answer to the first question                                                          | The program should tell the user that they've missed a field and tell them where they missed it so they can add it back                   | ![Test 2 Screenshot]({{ site.baseurl }}{% link static/word_quiz_screenshots/test2.png %})   |
 | input.csv                                          | the user may accidentally put the actual answer in the answer field instead of a, b, c or d. In this case, the second question has the answer written as "Seventy" instead of B   | the program should tell the user where the error occurred and that the answer field has to be a, b, c or d                                | ![Test 3 Screenshot]({{ site.baseurl }}{% link static/word_quiz_screenshots/test3.png %})   |

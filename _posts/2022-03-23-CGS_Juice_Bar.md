@@ -3,6 +3,7 @@ title: CGS Juice Bar
 excerpt: Test Table for the CGS Juice Bar
 layout: post
 ---
+
 {% include header.html %}
 
 <style>
@@ -14,6 +15,7 @@ layout: post
 ## Code
 
 ### Input Dictionaries
+
 ```python
 choices_dict = {
     'fruit_vegetable': [['Apple', 'Pineapple', 'Banana'],
@@ -38,6 +40,7 @@ category_name_dict = {
 ```
 
 ### Tab Layout
+
 ```python
 get_tab_layout(
     name='juice_type',
@@ -56,7 +59,7 @@ get_tab_layout(
 ## Test Table
 
 | Test Case                | Test Data                                                                                | Expected Result                                                                                                                                                                                     | Actual Result                                                                                                                                                                            |
-|--------------------------|------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------ | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | tabs                     | see input dictionaries above                                                             | the program should render all tabs with the specified tab names, as well as the options from the choices dict                                                                                       | ![Test 1 Screenshot]({{ site.baseurl }}{% link static/juice_bar_screenshots/test1.png %})                                                                                                |
 | tab_layout               | see tab layout above                                                                     | given the specific sg function, the tab_layout function should create and center each frame inside the tab                                                                                          | ![Test 2 Screenshot]({{ site.baseurl }}{% link static/juice_bar_screenshots/test2.png %})<br>![Test 2 Screenshot]({{ site.baseurl }}{% link static/juice_bar_screenshots/test2.5.png %}) |
 | limit_checkbox_selection | the 4 selected checkboxes by the user                                                    | the function (which is run every time an even runs) should disable all non-selected checkboxes to limit the selection to 4                                                                          | ![Test 3 Screenshot]({{ site.baseurl }}{% link static/juice_bar_screenshots/test3.png %})                                                                                                |
