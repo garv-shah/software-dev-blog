@@ -3,6 +3,7 @@ title: Word Match
 excerpt: Test Table for Word Match
 layout: post
 ---
+
 {% include header.html %}
 
 <style>
@@ -12,7 +13,7 @@ layout: post
 </style>
 
 | Test Case               | Test Data                                                                      | Expected Result                                                                                                                                      | Actual Result                                                                                |
-|-------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| ----------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | words.txt               | no words in text file                                                          | no matching words found                                                                                                                              | ![Test 1 Screenshot]({{ site.baseurl }}{% link static/word_match_screenshots/test1.png %})   |
 | random_number           | random number is between 0 - 5 instead of 0 - 4                                | If the number selected is 5, a IndexError is thrown                                                                                                  | ![Test 2 Screenshot]({{ site.baseurl }}{% link static/word_match_screenshots/test2.png %})   |
 | random_number, alphabet | the number 2 is chosen with the alphabet b                                     | all numbers that have b in the their third position are displayed                                                                                    | ![Test 3 Screenshot]({{ site.baseurl }}{% link static/word_match_screenshots/test3.png %})   |
