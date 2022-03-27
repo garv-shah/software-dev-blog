@@ -13,9 +13,8 @@ function makeBlogPost() {
 function fetchPosts() {
   var request = new XMLHttpRequest();
   const getUrl = window.location;
-  const baseUrl =
-    getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split("/")[1];
-  const ATOM_FEED_URL = baseUrl + "/feed.xml";
+  const baseUrl = `${getUrl.protocol}//${getUrl.host}/${getUrl.pathname.split("/")[1]}`;
+  const ATOM_FEED_URL = `${baseUrl}/feed.xml`;
   const ERROR_MSG = "Uh Oh: Cannot load posts at the moment :(";
   request.open("GET", ATOM_FEED_URL, true);
 
